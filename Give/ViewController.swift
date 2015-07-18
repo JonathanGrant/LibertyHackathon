@@ -17,9 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var actInd: UIActivityIndicatorView!
     @IBOutlet weak var myWebView: UIWebView!
     @IBOutlet weak var adView: GADBannerView!
-    @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var refresh: UIButton!
-    @IBOutlet weak var forward: UIButton!
     
     func webViewDidStartLoad(_ : UIWebView) {
         actInd.startAnimating()
@@ -48,21 +45,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let url = NSURL(string: "http://whomentors.com/project/campaign/3.html?layout=single#single")
-        let requestObj = NSURLRequest(URL: url!)
-        myWebView.loadRequest(requestObj)
+        loadURL()
         
         setUpAds()
-        setUpIcons()
     }
     
-    func setUpIcons() {
-        back.titleLabel!.font = UIFont(name: "FontAwesome", size: 27)
-        refresh.titleLabel!.font = UIFont(name: "FontAwesome", size: 27)
-        forward.titleLabel!.font = UIFont(name: "FontAwesome", size: 27)
-        back.setTitle("\u{f060}", forState: .Normal)
-        forward.setTitle("\u{f061}", forState: .Normal)
-        refresh.setTitle("\u{f021}", forState: .Normal)
+    @IBAction func home() {
+        loadURL()
+    }
+    
+    func loadURL() {
+        let url = NSURL(string: "http://whomentors.com/project/campaign/3.html?layout=single#myTab")
+        let requestObj = NSURLRequest(URL: url!)
+        myWebView.loadRequest(requestObj)
     }
     
     func setUpAds() {
@@ -96,11 +91,11 @@ class ViewController: UIViewController {
     }
 
     //Sharing
-    @IBAction func shareButtonClicked(sender: UIButton)
+    @IBAction func shareButtonClicked()
     {
-        let textToShare = "Swift is awesome!  Check out this website about it!"
+        let textToShare = "Support WHOmentors.com, Inc.!"
         
-        if let myWebsite = NSURL(string: "http://www.codingexplorer.com/")
+        if let myWebsite = NSURL(string: "http://www.WHOmentors.com/")
         {
             let objectsToShare = [textToShare, myWebsite]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
