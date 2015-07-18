@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5727E594-6CCD-4171-BF08-B0E4C0F979D6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C98483B7EB83378019F8C429B285C0ACCD1EEB2F</key>
+		<string>https://github.com/JonathanGrant/Give.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Give.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C98483B7EB83378019F8C429B285C0ACCD1EEB2F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JonathanGrant/Give.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C98483B7EB83378019F8C429B285C0ACCD1EEB2F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C98483B7EB83378019F8C429B285C0ACCD1EEB2F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Give</string>
+		</dict>
+	</array>
+</dict>
+</plist>
